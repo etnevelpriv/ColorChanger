@@ -11,8 +11,9 @@ export const ColorChanger = function () {
                     hexStr += `${hexChars[Math.floor(Math.random() * 16)]}`
                 };
                 bgColorChange(hexStr)
-                document.body.style.backgroundColor = bgColor
+                document.body.style.backgroundColor = hexStr
             }}>Random hatterszin</button>
+            <p>{bgColor}</p>
         </>
     )
 }
